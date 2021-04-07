@@ -40,9 +40,7 @@ class Counter extends Component {
         return (
             <div className="counter">
             Counter:
-            <span className="value">
-                {this.state.counterValue}
-            </span>
+            <Display />
             <button onClick={this.changeValue}>
                 Add 1
             </button>
