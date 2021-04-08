@@ -3,8 +3,6 @@ import './App.css';
 
 import Counter from './Counter';
 
-import Display from './Display';
-
 import Step from './Step';
 
 

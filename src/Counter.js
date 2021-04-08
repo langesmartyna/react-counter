@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import './Counter.css';
 
+import Display from './Display';
+
+import ButtonsPanel from '.ButtonsPanel';
+
+
 let randomNumber = Math.floor(Math.random() * (108 - 1 + 1 ) + 1);
 
 class Counter extends Component {
@@ -40,7 +45,7 @@ class Counter extends Component {
         return (
             <div className="counter">
             Counter:
-            <Display />
+            <Display displayValue={this.state.counterValue} />
             <button onClick={this.changeValue}>
                 Add 1
             </button>
