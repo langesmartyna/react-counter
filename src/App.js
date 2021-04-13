@@ -3,7 +3,7 @@ import './App.css';
 
 import Counter from './Counter';
 
-import Step from './Step';
+// import Step from './Step';
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
 
       <Counter initValue={0} />
       <Counter initValue={108} />
-      <Step initValue={1} />
+      {/* <Step initValue={1} /> */}
 
     </div>
   );

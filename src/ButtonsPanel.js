@@ -6,9 +6,12 @@ function ButtonsPanel(props) {
 
     return (
         <div className="buttons-panel">
-            <button>Add 1</button>
-            <button>ReInit</button>
-            <button>Reset</button>
+            <button onClick={() => {
+                props.buttonMethod('add');}}>Add 1</button>
+            <button onClick={() => {
+                props.buttonMethod('reinit');}}>ReInit</button>
+            <button onClick={() => {
+                 props.buttonMethod('reset');}}>Reset</button>
         </div>
 
     );
