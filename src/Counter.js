@@ -22,6 +22,7 @@ class Counter extends Component {
         this.state = {
             counterValue: this.props.initValue,
             showClock: true,
+            stepValue: this.props.initValue,
         };
     }
 
@@ -69,7 +70,15 @@ class Counter extends Component {
         })
     }
 
+    // stepValue = () => {
+    //     this.setState((prevState) => {
+    //         return ({
+    //             input 
+    //         })
+    //     });
+    // }
 
+ 
     render() {
         // let randomNumber = Math.floor(Math.random() * (108 - 1 + 1 ) + 1);
 
@@ -85,7 +94,7 @@ class Counter extends Component {
                 Counter:
                 <Display displayValue={this.state.counterValue} />
                 <ButtonsPanel buttonMethod={this.changeValue} />
-                <Step stepNumber={1} />
+                <Step stepNumber={this.stepValue}/>
                 {clockElement}
             </div>
         );
