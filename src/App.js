@@ -26,8 +26,7 @@ function App() {
 
       <Counter initValue={0} />
       <Counter initValue={108} />
-      <Step />
-
+    
     </div>
   );
 }

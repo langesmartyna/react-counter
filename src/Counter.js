@@ -47,7 +47,7 @@ class Counter extends Component {
             let currentCounterValue = prevState.counterValue;
 
             if (action === 'add') {
-                currentCounterValue = this.state.stepValue;
+                currentCounterValue += this.state.stepValue;
 
             } else if (action === 'reinit') {
                 currentCounterValue = prevProps.initValue;
@@ -73,10 +73,9 @@ class Counter extends Component {
     }
 
     updateStepValue = (currentValue) => {
-        let step = this._inputStep.value
         
         this.setState({
-            stepValue: currentValue
+            stepValue: parseFloat(currentValue)
         });
     }
    
